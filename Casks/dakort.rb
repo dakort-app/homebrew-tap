@@ -4,21 +4,21 @@ cask "dakort" do
 
   on_macos do
     on_arm do
-      sha256 "19b7a5199aa34dcaf960cfe907b90f4b5b1de6a0239cb55303757035773b93f4"
+      sha256 "fadd4625a1b68e1e86f1c36896d0f94035f2d8bc891cdfbd472d8c93ca823407"
       url "https://github.com/dakort-app/dakort/releases/download/v#{version}/dakort_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2677115696e335554aebd93b3d6d82b8d7035e1a4de9ea369d244edfce01035e"
+      sha256 "4db8817779162c54c4b1e8a78960f18521c700dcb094f8dd025e2bc9646efaa4"
       url "https://github.com/dakort-app/dakort/releases/download/v#{version}/dakort_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "7d73bdc414a5c7560f5c9edadafc6fff8c66b6c8aa6d793a92dec2a357d843aa"
+      sha256 "55f9657df1abf9b16e1800e1b98ce9cb1cf0920d1bd0904493629a5a7130674c"
       url "https://github.com/dakort-app/dakort/releases/download/v#{version}/dakort_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7c64dc44929e4d573c4048bfe877514bb01df0f55d3c93f3fc39ac3f43f4f22a"
+      sha256 "0f9803f47d2f49969d7194601e38518c3221d38b65f25c13ec05131d2c742eaa"
       url "https://github.com/dakort-app/dakort/releases/download/v#{version}/dakort_#{version}_linux_amd64.tar.gz"
     end
   end
