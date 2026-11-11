@@ -1,0 +1,16 @@
+# On every push (goreleaser's included): install the cask on a Mac the way
+# a person would, and run the binary. The first public install failed on
+# a cask Homebrew refused (2026-11-10); this would have caught it.
+name: install
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  brew:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install --cask ./Casks/dakort.rb
+      - run: dakort -version
+      - run: brew uninstall --cask dakort
